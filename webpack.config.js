@@ -78,15 +78,8 @@ module.exports = {
 	},
 
 	plugins: [
-		new ExtractTextPlugin('qmxtr-equalizer.bundle.css')
+		new ExtractTextPlugin('qmxtr-volume.bundle.css')
 	],
-
-	resolve: {
-		alias: {
-			'variables': path.resolve(__dirname, 'app', 'less', 'variables.less'),
-			'theme': path.resolve(__dirname, 'app', 'less', 'theme.less')
-		}
-	},
 
 	devtool: '#eval-source-map'
 };

@@ -2,12 +2,13 @@
   "name": "qmxtr-volume",
   "version": "1.0.0",
   "description": "A volume adjustment plugin for QMXTR.",
-  "main": "dist/qmxtr-volume.bundle.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/QMXTR/qmxtr-volume.git"
   },
   "scripts": {
+    "start": "webpack --watch",
     "build": "webpack"
   },
   "keywords": [
@@ -38,10 +39,10 @@
     "postcss-url": "^5.1.2",
     "vue-loader": "^11.3.4",
     "vue-template-compiler": "^2.2.6",
-    "webpack": "^2.3.2",
-    "webpack-dev-server": "^2.4.2"
+    "webpack": "^2.3.2"
   },
   "dependencies": {
+    "roboto-fontface": "^0.7.0",
     "vue-slider-component": "^2.2.6"
   }
 }
