@@ -82,10 +82,6 @@
 
 			volumeR(){
 				return Math.round(this.$store.state['volume-r'] * 100);
-			},
-
-			volume(){
-				return Math.round(this.volumeL / 2 + this.volumeR / 2);
 			}
 		},
 
@@ -112,11 +108,11 @@
 
 		mounted(){
 			this.$store.watch((state) => state.volumeL, () => {
-				this.$refs.volL.val = this.volume;
+				this.$refs.volL.val = this.volumeL;
 				this.$refs.volL.setPosition();
 			});
 			this.$store.watch((state) => state.volumeR, () => {
-				this.$refs.volR.val = this.volume;
+				this.$refs.volR.val = this.volumeR;
 				this.$refs.volR.setPosition();
 			});
 		},
