@@ -15,7 +15,8 @@
 
 	.q-volume {
 		align-items: center;
-		margin: 0 10px;
+		margin-left: 10px;
+		padding-right: 20px;
 		max-width: 150px;
 
 		.vue-slider-tooltip {
